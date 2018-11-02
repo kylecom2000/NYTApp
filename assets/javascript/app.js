@@ -5,6 +5,9 @@ $("searchButton").on("click", function() {
     var dataSearch = $(this).attr("data-search");
     var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
 
+    // Here's your API Key: be5386047e454d2e843505c37c20949b
+
+
 $.ajax({
   url: url,
   method: 'GET',
