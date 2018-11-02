@@ -8,15 +8,19 @@ $("searchButton").on("click", function() {
     // Here's your API Key: be5386047e454d2e843505c37c20949b
 
 
+// Built by LucyBot. www.lucybot.com
+var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
+url += '?' + $.param({
+  'api-key': "be5386047e454d2e843505c37c20949b"
+});
 $.ajax({
   url: url,
   method: 'GET',
-    }).done(function(result) {
-    console.log(result);
-    }).fail(function(err) {
-    throw err;
-}).then(function(response) {
-    var results = response.data;
+}).done(function(result) {
+  console.log(result);
+}).fail(function(err) {
+  throw err;
+});
 
     for (var i = 0; i < results.length; i++) {
         var articleDiv = $("<div>");
