@@ -16,30 +16,27 @@
         <div class="row header">
             <h1>New York Times Search</h1>
         </div>  
-        <div class="wrapper flex flex-justify-center flex-align-center">
-                <div class="form-wrapper">
-                    <div class="row">
-                        <div class="col-12 search-title for-wrapper-topper"><p>Search NYT archives</p></div><!-- end col-->
-                    </div><!--end row-->  
-                    <div class="row">
-                        <div class="col-3">Search Term </div>
-                        <div class="col-9"><input type="text" name="searchTerm" value=""></div> 
-                    </div><!--end row-->
-                    <div class="row">
-                        <div class="col-3">Number of Records to Return</div>
-                        <div class="col-9"><input type="Number" name="numberRecords"></div>
-                    </div><!--end row-->
-                    <div class="row">
-                        <div class="col-3">Earliest Year requested (optional)</div>
-                        <div class="col-9"><input type="Number" name="EarliestYear"></div>
-                    </div><!--end row-->
-                    <div class="row">
-                        <div class="col-3">Latest Year requested (optional)</div>
-                        <div class="col-9"><input type="Number" name="latestYear"></div>
-                    </div><!--end row-->
-                </div><!--End form-wrapper-->
+        <div class="row searchParameters">
+            <div class="rowTopper">Search Parameters</div>
+            <div class="rowSearch">
+                    <div class="col-3">Search Term </div>
+                    <div class="col-9"><input type="text" name="searchTerm" value=""></div> 
+                </div><!--end row-->
+                <div class="rowSearch">
+                    <div class="col-3">Number of Records to Return</div>
+                    <div class="col-9"><input type="Number" name="numberRecords"></div>
+                </div><!--end row-->
+                <div class="rowSearch">
+                    <div class="col-3">Earliest Year requested (optional)</div>
+                    <div class="col-9"><input type="Number" name="EarliestYear"></div>
+                </div><!--end row-->
+                <div class="rowSearch">
+                    <div class="col-3">Latest Year requested (optional)</div>
+                    <div class="col-9"><input type="Number" name="latestYear"></div>
+        </div>
         <div class="row topArticles">
             <div class="rowTopper">Top Articles</div>
+            <div class="articlesList"></div>
         </div>
 
     </div>
