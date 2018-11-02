@@ -33,5 +33,4 @@ $.ajax({
         articleDiv.append(author);
         $(".articlesList").append(articleDiv);
     }
-})
 });
