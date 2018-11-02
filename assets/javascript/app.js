@@ -1,6 +1,8 @@
 // NYT API App
 
-var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
+$("searchButton").on("click", function() {
+    var dataSearch = $(this).attr("data-search");
+    var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
 $.ajax({
   url: url,
   method: 'GET',
@@ -9,4 +11,5 @@ $.ajax({
 }).fail(function(err) {
   throw err;
 });
+
 
