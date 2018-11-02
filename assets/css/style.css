@@ -34,6 +34,15 @@ html,body {
     margin-bottom: 16px;
 }
 
+.search-buttons li{
+    float: left;
+    border: 3px solid black;
+    border-radius: 999px;
+    margin: 8px;
+    padding: 8px;
+    font-size: 1.25rem;
+}
+
 
 /* Col definitions */
 .col-1 {width: 8.33%;}
@@ -48,7 +57,7 @@ html,body {
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
-}
+
 .row {
     position: absolute;
     width: 70%;
